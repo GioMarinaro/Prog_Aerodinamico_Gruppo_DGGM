@@ -91,7 +91,7 @@ def rotation(polygrade,rot_location,x_camber,y_camber):
 #file_path = "/Users/danielegalluzzo/progettoAerodinamico/OUTWASH/profili/s1210.dat" 
 
 Tk().withdraw()  # Nasconde la finestra principale
-file_path = askopenfilename(title="Seleziona il file .dat", filetypes=[("DAT files", "*.dat")])
+file_path = askopenfilename(title="Seleziona il file .dat (cartella flap_outwash/Profili)", filetypes=[("DAT files", "*.dat")])
 
 if not file_path:
     raise FileNotFoundError("Nessun file selezionato")
@@ -105,7 +105,7 @@ rot_location = 0.25
 rotated_data, theta, pivot, p, x_rot,x_up,x_lo,y_up,y_lo = rotation(3,rot_location,x_c,y_c)
 
 print(f"Rotation Angle: {-np.degrees(theta):.2f}°")
-print(f"Pivot Point): {pivot}")
+print(f"Pivot Point: {pivot}")
 
 
 
