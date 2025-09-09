@@ -240,9 +240,9 @@ plt.tight_layout()
 plt.show()
 
 # --- Salvataggio profili accoppiati ---
-# Crea la cartella "CSV per simulazioni" dentro la cartella Simulazioni (non più in profili)
-simulazioni_path = os.path.join(os.path.dirname(profili_path), 'Simulazioni')
-csv_sim_folder = os.path.join(simulazioni_path, "CSV per simulazioni")
+# Crea la cartella "CSV per simulazioni" dentro la cartella Sim_files (non più in profili)
+simulazioni_path = os.path.join(os.path.dirname(profili_path), 'Sim_files')
+csv_sim_folder = os.path.join(simulazioni_path, "CSV_txt_per_simulazioni")
 os.makedirs(csv_sim_folder, exist_ok=True)
 
 # Usa i nomi dei file .dat selezionati (senza estensione)
