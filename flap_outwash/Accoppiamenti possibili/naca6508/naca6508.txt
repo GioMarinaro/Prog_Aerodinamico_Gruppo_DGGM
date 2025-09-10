@@ -1,0 +1,11 @@
+naca6508.dat,be092_075.dat,-46.53,-6.68
+naca6508.dat,be122_125.dat,-59.01,-6.68
+naca6508.dat,be122_155.dat,-67.62,-6.68
+naca6508.dat,naca45008.dat,-33.56,-6.68
+naca6508.dat,naca5406.dat,-43.12,-6.68
+naca6508.dat,naca6408.dat,-46.80,-6.68
+naca6508.dat,naca6508.dat,-48.71,-6.68
+naca6508.dat,s1210.dat,-66.93,-6.68
+naca6508.dat,s1223.dat,-71.79,-6.68
+naca6508.dat,s4083.dat,-40.52,-6.68
+naca6508.dat,sd7037.dat,-37.25,-6.68
