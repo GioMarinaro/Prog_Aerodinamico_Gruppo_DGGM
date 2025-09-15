@@ -140,7 +140,7 @@ def analizza_tutte_cartelle(base_dir):
 if __name__ == "__main__":
     percorso = os.path.dirname(os.path.abspath(__file__))
     risultati, fieldnames = analizza_tutte_cartelle(percorso)
-    output_csv = os.path.join(percorso, "risultati_deviazione.csv")
+    output_csv = os.path.join(percorso, "risultati_deviazione_3D.csv")
     with open(output_csv, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
