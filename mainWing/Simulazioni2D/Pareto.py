@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 from tkinter import Tk, filedialog 
 import numpy as np
-plt.style.use('fivethirtyeight')
+
 
 # selezione del file .csv 
 Tk().withdraw()
