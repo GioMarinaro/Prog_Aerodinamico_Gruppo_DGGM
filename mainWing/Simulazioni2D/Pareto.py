@@ -132,10 +132,10 @@ def plot_con_numeri_e_legenda(df_all, fronte, titolo,
 
 
 # --- Esempio di utilizzo per il Naso ---
-plot_con_numeri_e_legenda(df_naso, Fronte_Pareto_naso, "Fronte di Pareto - Configurazioni con Naso")
+plot_con_numeri_e_legenda(df_naso, Fronte_Pareto_naso, "Fronte di Pareto - Configurazioni con Muso")
 
 # --- E per il No Naso (se vuoi mostrarlo dopo) ---
-plot_con_numeri_e_legenda(df_nonaso, Fronte_Pareto_nonaso, "Fronte di Pareto - Configurazioni senza Naso")
+plot_con_numeri_e_legenda(df_nonaso, Fronte_Pareto_nonaso, "Fronte di Pareto - Configurazioni senza Muso")
 
 
 #esportazione dei dati 
