@@ -1,0 +1,5 @@
+cl -2.330011
+cd  0.297108
+
+
+purtroppo l'history non è completa
