@@ -1,0 +1,108 @@
+SIM,Tipo,Configurazione,CL,Cd,Path
+RESULT_GIO,be183_056_goe431_no_naso,be183_056_goe431_no_naso,-0.591781,0.208819,RESULT_GIO/be183_056_goe431_no_naso/Results.txt
+RESULT_GIO,be183_056_s1210_no_naso,be183_056_s1210_no_naso,-1.043526,0.228931,RESULT_GIO/be183_056_s1210_no_naso/results.txt
+RESULT_GIO,eppler398_goe431_no_naso,eppler398_goe431_no_naso,-1.149139,0.209252,RESULT_GIO/eppler398_goe431_no_naso/Results.txt
+RESULT_GIO,eppler398_be092_075_si_naso,eppler398_be092_075_si_naso,-2.339048,0.303657,RESULT_GIO/eppler398_be092_075_si_naso/Results.txt
+RESULT_GIO,naca6412_goe431_no_naso,naca6412_goe431_no_naso,-1.198293,0.202523,RESULT_GIO/naca6412_goe431_no_naso/Results.txt
+RESULT_GIO,eppler398_s1210_no_naso,eppler398_s1210_no_naso,-1.146635,0.210253,RESULT_GIO/eppler398_s1210_no_naso/results.txt
+RESULT_GIO,eppler398_be123_076_no_naso,eppler398_be123_076_no_naso,-1.128607,0.203982,RESULT_GIO/eppler398_be123_076_no_naso/Results.txt
+RESULT_GIO,eppler398_s1210_si_naso,eppler398_s1210_si_naso,-2.330011,0.297108,RESULT_GIO/eppler398_s1210_si_naso/results.txt
+RESULT_GIO,eppler398_be123_076_si_naso,eppler398_be123_076_si_naso,-2.294318,0.30837,RESULT_GIO/eppler398_be123_076_si_naso/Results.txt
+RESULT_GIO,naca6412_goe431_si_naso,naca6412_goe431_si_naso,-2.463809,0.325448,RESULT_GIO/naca6412_goe431_si_naso/Results.txt
+RESULT_GIO,eppler398_be092_075_no_naso,eppler398_be092_075_no_naso,-1.147991,0.206557,RESULT_GIO/eppler398_be092_075_no_naso/Results.txt
+RESULT_GIO,eppler398_goe431_si_naso,eppler398_goe431_si_naso,-2.342844,0.312093,RESULT_GIO/eppler398_goe431_si_naso/Results.txt
+RESULT_GIO,be183_056_s1210_si_naso,be183_056_s1210_si_naso,-2.222953,0.338273,RESULT_GIO/be183_056_s1210_si_naso/results.txt
+RESULT_GIO,be183_056_goe431_si_naso,be183_056_goe431_si_naso,-2.230906,0.336908,RESULT_GIO/be183_056_goe431_si_naso/Results.txt
+RESULT_GIO,be183_056_eppler61_si_naso,be183_056_eppler61_si_naso,-2.107632,0.306761,RESULT_GIO/be183_056_eppler61_si_naso/Results.txt
+RESULT_GIO,eppler398_wortmann_no_naso,eppler398_wortmann_no_naso,-1.108876,0.196504,RESULT_GIO/eppler398_wortmann_no_naso/Results.txt
+RESULT_GIO,be183_056_be092_075_no_naso,be183_056_be092_075_no_naso,-0.996143,0.21642,RESULT_GIO/be183_056_be092_075_no_naso/Results.txt
+RESULT_GIO,eppler398_eppler61_si_naso,eppler398_eppler61_si_naso,-2.278628,0.288115,RESULT_GIO/eppler398_eppler61_si_naso/Results.txt
+RESULT_GIO,naca6412_s1210_no_naso,naca6412_s1210_no_naso,-1.218559,0.208274,RESULT_GIO/naca6412_s1210_no_naso/Results.txt
+RESULT_GIO,naca6412_be092_075_si_naso,naca6412_be092_075_si_naso,-2.434876,0.312738,RESULT_GIO/naca6412_be092_075_si_naso/Results.txt
+RESULT_GIO,be183_056_wortmann_no_naso,be183_056_wortmann_no_naso,-0.550447,0.196978,RESULT_GIO/be183_056_wortmann_no_naso/Results.txt
+RESULT_GIO,naca6412_eppler61_si_naso,naca6412_eppler61_si_naso,-2.412922,0.301206,RESULT_GIO/naca6412_eppler61_si_naso/Results.txt
+RESULT_GIO,be183_056_be123_076_si_naso,be183_056_be123_076_si_naso,-2.226864,0.33317,RESULT_GIO/be183_056_be123_076_si_naso/Results.txt
+RESULT_GIO,naca6412_be123_076_no_naso,naca6412_be123_076_no_naso,-1.183329,0.199891,RESULT_GIO/naca6412_be123_076_no_naso/Results.txt
+RESULT_GIO,naca6412_wortmann_no_naso,naca6412_wortmann_no_naso,-1.142501,0.197196,RESULT_GIO/naca6412_wortmann_no_naso/Results.txt
+RESULT_GIO,naca6412_wortmann_si_naso,naca6412_wortmann_si_naso,-2.370757,0.291115,RESULT_GIO/naca6412_wortmann_si_naso/Results.txt
+RESULT_GIO,naca6412_be123_076_si_naso,naca6412_be123_076_si_naso,-2.444749,0.318539,RESULT_GIO/naca6412_be123_076_si_naso/Results.txt
+RESULT_GIO,naca6412_eppler61_no_naso,naca6412_eppler61_no_naso,-1.220674,0.205113,RESULT_GIO/naca6412_eppler61_no_naso/Results.txt
+RESULT_GIO,be183_056_be123_076_no_naso,be183_056_be123_076_no_naso,-1.006897,0.217438,RESULT_GIO/be183_056_be123_076_no_naso/Results.txt
+RESULT_GIO,naca6412_s1210_si_naso,naca6412_s1210_si_naso,-2.451494,0.327139,RESULT_GIO/naca6412_s1210_si_naso/Results.txt
+RESULT_GIO,eppler398_eppler61_no_naso,eppler398_eppler61_no_naso,-1.172034,0.204161,RESULT_GIO/eppler398_eppler61_no_naso/Results.txt
+RESULT_GIO,be183_056_wortmann_si_naso,be183_056_wortmann_si_naso,-2.085331,0.297022,RESULT_GIO/be183_056_wortmann_si_naso/Results.txt
+RESULT_GIO,naca6412_be092_075_no_naso,naca6412_be092_075_no_naso,-1.216701,0.205523,RESULT_GIO/naca6412_be092_075_no_naso/Results.txt
+RESULT_GIO,be183_056_eppler61_no_naso,be183_056_eppler61_no_naso,-1.045771,0.218256,RESULT_GIO/be183_056_eppler61_no_naso/Results.txt
+RESULT_GIO,eppler398_wortmann_si_naso,eppler398_wortmann_si_naso,-2.249881,0.279182,RESULT_GIO/eppler398_wortmann_si_naso/Results.txt
+RESULT_GIO,be183_056_be092_075_si_naso,be183_056_be092_075_si_naso,-2.172926,0.324454,RESULT_GIO/be183_056_be092_075_si_naso/Results.txt
+RESULT_LUCA,noNose,be153-076_be123-076,-0.979156,0.223097,RESULT_LUCA/noNose/be153-076_be123-076/results.txt
+RESULT_LUCA,noNose,s1223_s1210,-1.08049,0.248071,RESULT_LUCA/noNose/s1223_s1210/results.txt
+RESULT_LUCA,noNose,be153-076_goe431,-0.979476,0.22413,RESULT_LUCA/noNose/be153-076_goe431/results.txt
+RESULT_LUCA,noNose,naca4412_eppler61,-1.368807,0.177598,RESULT_LUCA/noNose/naca4412_eppler61/results.txt
+RESULT_LUCA,noNose,be153-076_s1210,-1.020343,0.235505,RESULT_LUCA/noNose/be153-076_s1210/results.txt
+RESULT_LUCA,noNose,naca4412_be123-076,-1.320518,0.182784,RESULT_LUCA/noNose/naca4412_be123-076/results.txt
+RESULT_LUCA,noNose,s1223_be092-075,-1.078501,0.240538,RESULT_LUCA/noNose/s1223_be092-075/results.txt
+RESULT_LUCA,noNose,s1223_goe431,-1.063827,0.24268,RESULT_LUCA/noNose/s1223_goe431/results.txt
+RESULT_LUCA,noNose,be153-076_be092-075,-0.999305,0.227667,RESULT_LUCA/noNose/be153-076_be092-075/results.txt
+RESULT_LUCA,noNose,naca4412_wortmannfx082-512,-1.265712,0.166009,RESULT_LUCA/noNose/naca4412_wortmannfx082-512/results.txt
+RESULT_LUCA,noNose,naca4412_be092-075,-1.333973,0.0,RESULT_LUCA/noNose/naca4412_be092-075/results.txt
+RESULT_LUCA,noNose,s1223_be123-076,-1.05769,0.241167,RESULT_LUCA/noNose/s1223_be123-076/results.txt
+RESULT_LUCA,noNose,be153-076_eppler61,-1.04948,0.227001,RESULT_LUCA/noNose/be153-076_eppler61/results.txt
+RESULT_LUCA,noNose,s1223_wortmannfx082-512,-1.021622,0.230195,RESULT_LUCA/noNose/s1223_wortmannfx082-512/results.txt
+RESULT_LUCA,noNose,s1223_eppler61,-1.111048,0.241172,RESULT_LUCA/noNose/s1223_eppler61/results.txt
+RESULT_LUCA,noNose,naca4412_goe431,-2.377692,0.278343,RESULT_LUCA/noNose/naca4412_goe431/results.txt
+RESULT_LUCA,noNose,naca4412_s1210,-1.358925,0.189118,RESULT_LUCA/noNose/naca4412_s1210/results.txt
+RESULT_LUCA,withNose,be153-076_be092-075_naso,-2.038804,0.350885,RESULT_LUCA/withNose/be153-076_be092-075_naso/results.txt
+RESULT_LUCA,withNose,naca4412_goe431_naso,-2.377692,0.278343,RESULT_LUCA/withNose/naca4412_goe431_naso/results.txt
+RESULT_LUCA,withNose,s1223_be092-075_naso,-2.31719,0.359914,RESULT_LUCA/withNose/s1223_be092-075_naso/results.txt
+RESULT_LUCA,withNose,be153-076_s1210_naso,-2.054082,0.36439,RESULT_LUCA/withNose/be153-076_s1210_naso/results.txt
+RESULT_LUCA,withNose,s1223_s1210_naso,-2.294564,0.367935,RESULT_LUCA/withNose/s1223_s1210_naso/results.txt
+RESULT_LUCA,withNose,s1223_be123-076_naso,-2.28369,0.365334,RESULT_LUCA/withNose/s1223_be123-076_naso/results.txt
+RESULT_LUCA,withNose,be153-076_wortmannfx082-512_naso,-1.990111,0.332592,RESULT_LUCA/withNose/be153-076_wortmannfx082-512_naso/results.txt
+RESULT_LUCA,withNose,be153-076_eppler61_naso,-2.01772,0.340548,RESULT_LUCA/withNose/be153-076_eppler61_naso/results.txt
+RESULT_LUCA,withNose,be153-076_be123-076_naso,-2.09426,0.363884,RESULT_LUCA/withNose/be153-076_be123-076_naso/results.txt
+RESULT_LUCA,withNose,be153-076_goe431_naso,-2.055137,0.365361,RESULT_LUCA/withNose/be153-076_goe431_naso/results.txt
+RESULT_LUCA,withNose,naca4412_s1210_naso,-2.450294,0.277979,RESULT_LUCA/withNose/naca4412_s1210_naso/results.txt
+RESULT_LUCA,withNose,s1223_goe431_naso,-2.304504,0.367132,RESULT_LUCA/withNose/s1223_goe431_naso/results.txt
+RESULT_LUCA,withNose,naca4412_be092-075_naso,-2.103592,0.260638,RESULT_LUCA/withNose/naca4412_be092-075_naso/results.txt
+RESULT_LUCA,withNose,naca4412_be123-076_naso,-2.47598,0.275084,RESULT_LUCA/withNose/naca4412_be123-076_naso/results.txt
+RESULT_LUCA,withNose,s1223_wortmannfx082-512_naso,-2.264927,0.336986,RESULT_LUCA/withNose/s1223_wortmannfx082-512_naso/results.txt
+RESULT_LUCA,withNose,s1223_eppler61_naso,-2.310756,0.348261,RESULT_LUCA/withNose/s1223_eppler61_naso/results.txt
+RESULT_LUCA,withNose,naca4412_eppler61_naso,-2.476482,0.256611,RESULT_LUCA/withNose/naca4412_eppler61_naso/results.txt
+RESULT_LUCA,withNose,naca4412_wortmannfx082-512_naso,-2.372053,0.249199,RESULT_LUCA/withNose/naca4412_wortmannfx082-512_naso/results.txt
+RESULT_DANI,No Naso,Eppler_396_Be_092_075,-1.208539819,0.1957182916,RESULT_DANI/No Naso/Eppler_396_Be_092_075/Result.txt
+RESULT_DANI,No Naso,Be_183_105_GOE_431,-0.09922792796,0.2259483713,RESULT_DANI/No Naso/Be_183_105_GOE_431/Result.txt
+RESULT_DANI,No Naso,Be_183_105_Be_123_076,-0.08793082203,0.2235674205,RESULT_DANI/No Naso/Be_183_105_Be_123_076/Result.txt
+RESULT_DANI,No Naso,Be_183_105_Eppler61,-0.1121179634,0.2241760225,RESULT_DANI/No Naso/Be_183_105_Eppler61/Result.txt
+RESULT_DANI,No Naso,Be_153_055_Eppler61,-1.117139411,0.2146791564,RESULT_DANI/No Naso/Be_153_055_Eppler61/Result.txt
+RESULT_DANI,No Naso,Be_183_105_WortmannFx_082_512,-0.06632960747,0.2164184493,RESULT_DANI/No Naso/Be_183_105_WortmannFx_082_512/Result.txt
+RESULT_DANI,No Naso,Be_153_055_S1210,-1.105693024,0.2235559762,RESULT_DANI/No Naso/Be_153_055_S1210/Result.txt
+RESULT_DANI,No Naso,Eppler_396_S1210,-1.242343,0.204603,RESULT_DANI/No Naso/Eppler_396_S1210/Result.txt
+RESULT_DANI,No Naso,Eppler_396_GOE_431,-1.203316788,0.1952307284,RESULT_DANI/No Naso/Eppler_396_GOE_431/Result.txt
+RESULT_DANI,No Naso,Be_153_055_Be_092_075,-1.112736651,0.2216693465,RESULT_DANI/No Naso/Be_153_055_Be_092_075/Result.txt
+RESULT_DANI,No Naso,Eppler_396_WortmannFx_082_512,-1.175707236,0.1867947071,RESULT_DANI/No Naso/Eppler_396_WortmannFx_082_512/Result.txt
+RESULT_DANI,No Naso,Be_153_055_WortmannFx_082_512,-1.050070051,0.2072841572,RESULT_DANI/No Naso/Be_153_055_WortmannFx_082_512/Result.txt
+RESULT_DANI,No Naso,Be_183_105_S1210,-0.08880164815,0.2269329829,RESULT_DANI/No Naso/Be_183_105_S1210/Result.txt
+RESULT_DANI,No Naso,Be_183_105_Be_092_075,-0.0914719764,0.2252180251,RESULT_DANI/No Naso/Be_183_105_Be_092_075/Result.txt
+RESULT_DANI,No Naso,Eppler_396_Be_123_076,-1.205538735,0.1962500649,RESULT_DANI/No Naso/Eppler_396_Be_123_076/Result.txt
+RESULT_DANI,No Naso,Be_153_055_Be_123_076,-1.071355198,0.212896316,RESULT_DANI/No Naso/Be_153_055_Be_123_076/Result.txt
+RESULT_DANI,No Naso,Be_153_055_GOE_431,-1.08093602,0.2175654747,RESULT_DANI/No Naso/Be_153_055_GOE_431/Result.txt
+RESULT_DANI,No Naso,Eppler_396_Eppler61,-1.24735098,0.192775546,RESULT_DANI/No Naso/Eppler_396_Eppler61/Result.txt
+RESULT_DANI,Naso,Be_183_105_Be_123_076_Naso,-1.116166875,0.3903428634,RESULT_DANI/Naso/Be_183_105_Be_123_076_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_S1210_Naso,-2.22688641,0.3179408146,RESULT_DANI/Naso/Be_153_055_S1210_Naso/Result.txt
+RESULT_DANI,Naso,Be_183_105_WortmannFx_082_512_Naso,-1.054553787,0.3639459805,RESULT_DANI/Naso/Be_183_105_WortmannFx_082_512_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_S1210_Naso,-2.364638076,0.3105035557,RESULT_DANI/Naso/Eppler_396_S1210_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_GOE_431_Naso,-2.223505119,0.3177791156,RESULT_DANI/Naso/Be_153_055_GOE_431_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_Eppler61_Naso,-2.168407,0.298664,RESULT_DANI/Naso/Be_153_055_Eppler61_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_Eppler61_Naso,-2.341382696,0.2885041174,RESULT_DANI/Naso/Eppler_396_Eppler61_Naso/Result.txt
+RESULT_DANI,Naso,Be_183_105_Eppler61_Naso,-1.074703,0.37117,RESULT_DANI/Naso/Be_183_105_Eppler61_Naso/Result.txt
+RESULT_DANI,Naso,Be_183_105_Be_092_075_Naso,-1.099209,0.381549,RESULT_DANI/Naso/Be_183_105_Be_092_075_Naso/Result.txt
+RESULT_DANI,Naso,Be_183_105_GOE_431_Naso,-1.121596,0.393909,RESULT_DANI/Naso/Be_183_105_GOE_431_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_Be_092_075_Naso,-2.206502203,0.3086846647,RESULT_DANI/Naso/Be_153_055_Be_092_075_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_GOE_431_Naso,-2.365635806,0.3133186128,RESULT_DANI/Naso/Eppler_396_GOE_431_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_Be_092_075_Naso,-2.36837643,0.3047731766,RESULT_DANI/Naso/Eppler_396_Be_092_075_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_Be_123_076_Naso,-2.380673487,0.3085449269,RESULT_DANI/Naso/Eppler_396_Be_123_076_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_WortmannFx_082_512_Naso,-2.123880375,0.2848098566,RESULT_DANI/Naso/Be_153_055_WortmannFx_082_512_Naso/Result.txt
+RESULT_DANI,Naso,Eppler_396_WortmannFx_082_512_Naso,-2.284515612,0.2772292264,RESULT_DANI/Naso/Eppler_396_WortmannFx_082_512_Naso/Result.txt
+RESULT_DANI,Naso,Be_183_105_S1210_Naso,-1.120219,0.392542,RESULT_DANI/Naso/Be_183_105_S1210_Naso/Result.txt
+RESULT_DANI,Naso,Be_153_055_Be_123_076_Naso,-2.22311123,0.3140009976,RESULT_DANI/Naso/Be_153_055_Be_123_076_Naso/Result.txt
