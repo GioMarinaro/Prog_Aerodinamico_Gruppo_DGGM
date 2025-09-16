@@ -7,11 +7,10 @@ Il codice, tra le altre cose, prende anche i file .txt e li trasforma in .dat, q
 essere usato anche per quello, se non si vuole riscalare, si mette solo 1
 È importante come il file che venga dato in input abbia soltanto numeri dentro, colonne coi
 dati e non titoli o altre cose strane dentro, quelli vanno cancellati a priori.
-Dato che airfoiltools è stato progettato da gente che aveva un gabinetto al posto del cervello,
-a volte i punti vanno dal bordo d'attacco al bordo d'uscita sul dorso e poi dal bordo d'attacco
-a quello d'uscita anche sul ventre, mentre altre volte invece seguono una linea unica, devo
-mettere manualmente una richiesta all'utilizzatore se è il caso di aggiustare questa cosa a 
-mano oppure no.'''
+Dato che su airfoiltools a volte i punti vanno dal bordo d'attacco al bordo d'uscita sul dorso 
+e poi dal bordo d'attacco a quello d'uscita anche sul ventre, mentre altre volte invece seguono
+una linea unica, devo mettere manualmente una richiesta all'utilizzatore se è il caso di
+aggiustare questa cosa a mano oppure no.'''
 
 import pandas as pd
 import numpy as np
