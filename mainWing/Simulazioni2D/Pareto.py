@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 from tkinter import Tk, filedialog 
 import numpy as np
+from matplotlib.lines import Line2D
 
 
 # selezione del file .csv 
@@ -39,7 +40,7 @@ print(df_naso.head())
 print("\n anteprima del dataframe senza naso: ")
 print(df_nonaso.head())
 
-def funzione_multi_obj(df, N_alpha=20):
+def funzione_multi_obj(df, N_alpha):
     Cd = df["Cd"]
     Cl = df["CL"]
 
@@ -63,54 +64,82 @@ def funzione_multi_obj(df, N_alpha=20):
     )
     return Pareto
 
+Fronte_Pareto_naso = funzione_multi_obj(df_naso,20)
+Fronte_Pareto_nonaso = funzione_multi_obj(df_nonaso,20)
 
-Fronte_Pareto_naso = funzione_multi_obj(df_naso,100)
-Fronte_Pareto_nonaso = funzione_multi_obj(df_nonaso,100)
+def plot_con_numeri_e_legenda(df_all, fronte, titolo,
+                              punto_all_color="blue", punto_all_edge="k",
+                              punto_front_color="red", punto_front_edge="k"):
+    """
+    df_all: dataframe con tutti i punti (index = Configurazione, colonne Cd, CL)
+    fronte: dataframe risultato della funzione_multi_obj (index = Configurazione, colonne Cd, CL, ...)
+    titolo: titolo del grafico
+    """
 
-# plot naso
+    plt.figure(figsize=(12, 7))
 
-plt.figure()
-plt.scatter(df_naso["Cd"], df_naso["CL"], alpha=0.3, label='tutte le configurazioni')
-plt.plot(Fronte_Pareto_naso["Cd"], Fronte_Pareto_naso["CL"], 'o-', label='Fronte di pareto')
-plt.xlabel('Cd')
-plt.ylabel('Cl')
-plt.title('Fronte di pareto con funzione multi-obiettivo J = alpha*f1 + (1-alpha)*f2')
-#plt.gca().invert_yaxis()
-plt.grid(True)
-plt.legend()
-plt.show()
+    # scatter veloce di tutti i punti (senza etichetta per non duplicare la legenda)
+    plt.scatter(df_all["Cd"], df_all["CL"], color=punto_all_color,
+                edgecolor=punto_all_edge, s=40, alpha=0.4, label="_nolegend_")
 
-# plot no naso
+    # evidenzio i punti che fanno parte del fronte (sopra allo scatter)
+    if not fronte.empty:
+        plt.scatter(fronte["Cd"], fronte["CL"], color=punto_front_color,
+                    edgecolor=punto_front_edge, s=80, zorder=5, label="_nolegend_")
+        plt.plot(fronte["Cd"], fronte["CL"], '-', color=punto_front_color, linewidth=2, zorder=4)
 
-plt.figure()
-plt.scatter(df_nonaso["Cd"], df_nonaso["CL"], alpha=0.3, label='tutte le configurazioni')
-plt.plot(Fronte_Pareto_nonaso["Cd"], Fronte_Pareto_nonaso["CL"], 'o-', label='Fronte di pareto')
-plt.xlabel('Cd')
-plt.ylabel('Cl')
-plt.title('Fronte di pareto con funzione multi-obiettivo J = alpha*f1 + (1-alpha)*f2 (No Naso)')
-#plt.gca().invert_yaxis()
-plt.grid(True)
-plt.legend()
-plt.show()
+    # calcolo piccoli offset per posizionare i numeri (proporzionale all'intervallo)
+    dx = (df_all["Cd"].max() - df_all["Cd"].min()) * 0.005
+    dy = (df_all["CL"].max() - df_all["CL"].min()) * 0.015
+
+    # enumerazione e annotazione dei punti (numero vicino al punto)
+    # uso l'ordine di df_all per il numbering
+    labels_map = []   # lista (i, config) per costruire la legenda
+    for i, (config, row) in enumerate(df_all.iterrows(), start=1):
+        x = row["Cd"]
+        y = row["CL"]
+        # posiziona il numero con un piccolo offset
+        plt.text(x + dx, y + dy, str(i), fontsize=8, ha="left", va="bottom")
+        labels_map.append((i, config))
+
+    # Costruisco i manici (handles) per la legenda: prima la linea del fronte, poi i mapping numero->config
+    legend_handles = []
+
+    # handle per la linea del fronte
+    if not fronte.empty:
+        legend_handles.append(Line2D([0], [0], color=punto_front_color, lw=2, label="Fronte di Pareto"))
+
+    # creo handles per ogni punto (mappa numero -> configurazione)
+    # i punti appartenenti al fronte avranno il marker rosso, gli altri grigio
+    fronte_set = set(fronte.index) if not fronte.empty else set()
+    for i, config in labels_map:
+        color = punto_front_color if config in fronte_set else punto_all_color
+        handle = Line2D([0], [0], marker='o', color='w',
+                        markerfacecolor=color, markeredgecolor='k', markersize=6,
+                        label=f"{i}: {config}")
+        legend_handles.append(handle)
+
+    # mostro la legenda a destra (puoi regolare fontsize o ncol)
+    plt.legend(handles=legend_handles, loc='center left', bbox_to_anchor=(1.02, 0.5),
+               fontsize=8, frameon=True)
+
+    plt.xlabel("$C_D$")
+    plt.ylabel("$C_L$")
+    plt.title(titolo)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+
+# --- Esempio di utilizzo per il Naso ---
+plot_con_numeri_e_legenda(df_naso, Fronte_Pareto_naso, "Fronte di Pareto - Configurazioni con Naso")
+
+# --- E per il No Naso (se vuoi mostrarlo dopo) ---
+plot_con_numeri_e_legenda(df_nonaso, Fronte_Pareto_nonaso, "Fronte di Pareto - Configurazioni senza Naso")
+
 
 #esportazione dei dati 
-df_naso.to_csv("DataFrame_Naso.csv")
-df_nonaso.to_csv("DataFrame_NoNaso.csv")
-Fronte_Pareto_naso.to_csv("Fronte_Pareto_naso.csv")
-Fronte_Pareto_nonaso.to_csv("Fronte_Pareto_nonaso.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+df_naso.to_csv("DataFrame_muso.csv")
+df_nonaso.to_csv("DataFrame_Nomuso.csv")
+Fronte_Pareto_naso.to_csv("Fronte_Pareto_muso.csv")
+Fronte_Pareto_nonaso.to_csv("Fronte_Pareto_nomuso.csv")

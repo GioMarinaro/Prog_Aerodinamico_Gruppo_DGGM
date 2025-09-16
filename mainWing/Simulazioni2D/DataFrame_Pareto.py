@@ -5,12 +5,12 @@ from  tkinter import Tk, filedialog
 
 # Percorso della cartella principale
 Tk().withdraw()
-root_dir = filedialog.askdirectory(title="seleziona la cartella CFD")
+root_dir = filedialog.askdirectory(title="seleziona la cartella mainWing")
 
 if not root_dir:
     raise ValueError("Nessuna cartella selezionata. Uscita.")
 
-print(f"Cartella CFD selezionata: {root_dir}")
+print(f"Cartella mainWing selezionata: {root_dir}")
 
 # Lista per salvare i dati
 data = []
