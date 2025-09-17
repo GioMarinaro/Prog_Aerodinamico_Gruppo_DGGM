@@ -1,3 +1,7 @@
+# Funzione per rendere maiuscole le parti diverse da si, no, muso
+def upper_except_si_no_muso(s):
+    parts = s.split('_')
+    return '_'.join([p if p.lower() in ['si', 'no', 'muso'] else p.upper() for p in parts])
 import pandas as pd 
 import matplotlib.pyplot as plt 
 from tkinter import Tk, filedialog 
@@ -34,10 +38,16 @@ df_nonaso = df_nonaso[ (df_nonaso["Cd"]>0) & (df_nonaso["CL"]<2)]
 # nella configurazione senza naso usiamo un filtro più stringete per eliminare i dati spuri che alterano il risultato della funzione
 
 
-print("\n anteprima del dataframe con il naso:")
+
+# Sostituzione nomi: '_naso' e '_si_naso' diventano '_muso' e '_si_muso' nell'indice
+df_naso.index = df_naso.index.str.replace('_si_naso', '_si_muso', case=False, regex=False)
+df_naso.index = df_naso.index.str.replace('_naso', '_muso', case=False, regex=False)
+df_nonaso.index = df_nonaso.index.str.replace('_no_naso', '_no_muso', case=False, regex=False)
+
+print("\n anteprima del dataframe con il muso:")
 print(df_naso.head())
 
-print("\n anteprima del dataframe senza naso: ")
+print("\n anteprima del dataframe senza muso: ")
 print(df_nonaso.head())
 
 def funzione_multi_obj(df, N_alpha):
@@ -76,7 +86,7 @@ def plot_con_numeri_e_legenda(df_all, fronte, titolo,
     titolo: titolo del grafico
     """
 
-    plt.figure(figsize=(12, 7))
+    plt.figure(figsize=(18, 10))
 
     # scatter veloce di tutti i punti (senza etichetta per non duplicare la legenda)
     plt.scatter(df_all["Cd"], df_all["CL"], color=punto_all_color,
@@ -131,11 +141,32 @@ def plot_con_numeri_e_legenda(df_all, fronte, titolo,
     plt.show()
 
 
-# --- Esempio di utilizzo per il Naso ---
-plot_con_numeri_e_legenda(df_naso, Fronte_Pareto_naso, "Fronte di Pareto - Configurazioni con Muso")
 
-# --- E per il No Naso (se vuoi mostrarlo dopo) ---
-plot_con_numeri_e_legenda(df_nonaso, Fronte_Pareto_nonaso, "Fronte di Pareto - Configurazioni senza Muso")
+# --- Esempio di utilizzo per il Muso (solo per il plot sostituisco '_muso' con '_si_muso') ---
+df_naso_plot = df_naso.copy()
+# Sostituisco '-' con '_' prima di tutte le altre trasformazioni
+df_naso_plot.index = df_naso_plot.index.str.replace('-', '_', regex=False)
+df_naso_plot.index = df_naso_plot.index.str.replace('_si_muso', '_muso', case=False, regex=False)
+df_naso_plot.index = df_naso_plot.index.str.replace('_muso', '_si_muso', case=False, regex=False)
+df_naso_plot.index = df_naso_plot.index.map(upper_except_si_no_muso)
+Fronte_Pareto_naso_plot = Fronte_Pareto_naso.copy()
+Fronte_Pareto_naso_plot.index = Fronte_Pareto_naso_plot.index.str.replace('-', '_', regex=False)
+Fronte_Pareto_naso_plot.index = Fronte_Pareto_naso_plot.index.str.replace('_muso', '_si_muso', case=False, regex=False)
+Fronte_Pareto_naso_plot.index = Fronte_Pareto_naso_plot.index.map(upper_except_si_no_muso)
+plot_con_numeri_e_legenda(df_naso_plot, Fronte_Pareto_naso_plot, "Fronte di Pareto - Configurazioni con Muso")
+
+
+# --- E per il No Muso (aggiungo '_no_muso' dove non presente, solo per il plot) ---
+df_nonaso_plot = df_nonaso.copy()
+# Sostituisco '-' con '_' prima di tutte le altre trasformazioni
+df_nonaso_plot.index = df_nonaso_plot.index.str.replace('-', '_', regex=False)
+df_nonaso_plot.index = df_nonaso_plot.index.map(lambda x: x if '_no_muso' in x.lower() else x + '_no_muso')
+df_nonaso_plot.index = df_nonaso_plot.index.map(upper_except_si_no_muso)
+Fronte_Pareto_nonaso_plot = Fronte_Pareto_nonaso.copy()
+Fronte_Pareto_nonaso_plot.index = Fronte_Pareto_nonaso_plot.index.str.replace('-', '_', regex=False)
+Fronte_Pareto_nonaso_plot.index = Fronte_Pareto_nonaso_plot.index.map(lambda x: x if '_no_muso' in x.lower() else x + '_no_muso')
+Fronte_Pareto_nonaso_plot.index = Fronte_Pareto_nonaso_plot.index.map(upper_except_si_no_muso)
+plot_con_numeri_e_legenda(df_nonaso_plot, Fronte_Pareto_nonaso_plot, "Fronte di Pareto - Configurazioni senza Muso")
 
 
 #esportazione dei dati 
